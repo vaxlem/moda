@@ -23,6 +23,7 @@ body {font-family: Verdana, sans-serif; margin:0;
             background-attachment: fixed;
       background: linear-gradient(90deg, #3b8d42, #2e6d34); 
     }
+    
 
 .btn{
   cursor: pointer;
@@ -42,20 +43,21 @@ body {font-family: Verdana, sans-serif; margin:0;
 }
 .mySlides {display: none}
 img {vertical-align: middle;
-width: fit-content;
-height: 500px;}
-.img {
+/* width: fit-content; */
+height: 450px;
+width:100%;}
+/* .img {
             width: 100%;
             height: auto;
             display: block;
-        }
+        } */
 /* Slideshow container */
 .slideshow-container {
   /* max-width: 20rem; */
   max-width: 30.5rem;
   position: relative;
   /* bottom: 30rem; */
-  margin: auto;
+  margin: 1rem auto;
   z-index: 1;
 }
 
@@ -261,38 +263,47 @@ h1 {
 <div class="slideshow-container">
   <div class="mySlides fade">
     <div class="numbertext">MOMMY AND I </div>
-    <img src="IMG-20210214-WA0021 hermon and i.jpg" style="width:100%;">
+    <img src="./image/IMG-20210214-WA0021 hermon and i.jpg" width="250" height="250">
     <div class="text">moda at this stage</div>
 </div>
-
+<!-- 
 <div class="mySlides fade">
   <div class="numbertext">MOMMY AND I </div>
-  <img src="/IMG_20230818_001414_048 at this stage.jpg" style="width:100%;">
+  <img src="/IMG_20230818_001414_048 at this stage.jpg" style="width:;">
   <div class="text">moda at this stage</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="IMG_20231229_002613_109 at this st.jpg" style="width:100%;">
+  <img src="./IMG_20231229_002613_109 at this st.jpg" style="width:;">
   <div class="text"> 2023</div>
 </div>
 <div class="mySlides fade">
   <div class="numbertext">HOW IT ALL BEGUN</div>
-  <img src="./New folder/IMG-20210731-WA0011 KORLEBU.jpg" style="width:100%">
+  <img src="./New folder/IMG-20210731-WA0011 KORLEBU.jpg" style="width:">
   <div class="text">KORLEBU-2021</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">MOMMY AND I</div>
-  <img src="./mO/IMG-20211011-WA0016 GRADUA.jpg" style="width:100%">
+  <img src="./mO/IMG-20211011-WA0016 GRADUA.jpg" style="width:">
   <div class="text">2021</div>
+</div>
+
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">HOW IT ALL BEGUN</div>
+  <img src="./IMG-20190611-WA0033 LATEbio.jpg" style="width:">
+  <div class="text">KORLEBU-2021</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">MOMMY AND I</div>
-  <img src="IMG-20211011-WA0017 elija and i 2.jpg" style="width:100%">
+  <img src="./image/elija and i 2.jpg" style="width:">
   <div class="text">KORLEBU-2021/OCT.</div>
-</div>
+</div> -->
 <!-- <div class="mySlides fade">
   <div class="numbertext">6  /999+</div>
   <img src="./image/APPLE.jpg" style="width:100%">
@@ -336,7 +347,7 @@ h1 {
 </div> -->
 <div class="mySlides fade">
   <div class="numbertext">GRADUAL DETERRORIATION </div>
-  <img src="./New folder/IMG-20210830-WA0005 gradual deterroriation.jpg" style="width:100%">
+  <img src="./New folder/IMG-20210830-WA0005 gradual deterroriation.jpg" width="250" height="250">
   <div class="text">HOME-2021/AUG.</div>
 </div>
 </div>
@@ -372,6 +383,7 @@ h1 {
   <!-- <a href="./english.html"><button class="btn">click for More</button></a> -->
   <a href="./PHOTOGRID.html"><button class="btn">click for More</button></a>
 </div>
+
 <script>
 let slideIndex = 0;
 showSlides();
