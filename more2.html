@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MODA</title>
@@ -28,25 +27,23 @@
 <script src="script.js"defer></script>
 <!-- password style -->
 <style>
+    /* Container to hold images */
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    /* Make images responsive */
+    .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+
   html {
     font-family: Google sans-serif;
   }
-  .btn{
-  cursor: pointer;
-  background-color: #dc3545 ;
-  color: white;
-  /* border-radius: 10%; */
-  border-radius: 30%;
-  border-color: yellow;
-  font-weight: bolder;
-  font-size: x-large;
-  margin-left: 5%;;
-  position: absolute; 
-  right: 43.5%; 
-  margin: 2rem 0rem;
-  font-weight: bold;
-  font-size: 18px;z-index: 1;
-}
+
   body {
     /* width: 50%;
     max-width: 500px;
@@ -63,6 +60,13 @@
       background: linear-gradient(90deg, #3b8d42, #2e6d34);  */
     }
   
+
+    /* Responsive for mobile devices (2 columns) */
+    @media (max-width: 768px) {
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 
   /* tablet and desktop */
   @media only screen and (min-width: 481px) and (max-width:769px) 
@@ -204,19 +208,12 @@
 </div>
     <!-- header -->
     <div class="image-grid">
-        <img src="./image/IMG-20230228-WA0017 RENCE N I.jpg" alt="Image 1">
-        <img src="./image/IMG-20230228-WA0017 RENCE N I.jpg" alt="Image 2">
-        <img src="./image/hermon and i.jpg" alt="Image 3">
-        <img src="./image/IMG-20210214-WA0021 hermon and i.jpg" alt="Image 4">
+        <img src="./IMG_20240103_110625_676.jpg" alt="Image 1">
+        <img src="./image/IMG-20190705-WA0004 VEN.jpg" alt="Image 2">
+        <img src="./image/IMG-20211010-WA0023.jpg" alt="Image 3">
+        <img src="./image/IMG-20211010-WA0023.jpg" alt="Image 4">
     </div>
     <!-- password script -->
-
-    <div>
-
-      <a href="./more2.html"><button class="btn">click for More</button></a>
-    
-    </div>
-    
 
     <!-- end of password script -->
     
@@ -224,7 +221,7 @@
 
       <!-- // Existing script content... -->
     <script type="text/javascript">
-        alert("HERE ARE MORE IMAGES!");
+        alert("MORE and MORE IMAGES!");
     </script>
 </body>
 </html>
