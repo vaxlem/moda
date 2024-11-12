@@ -60,6 +60,26 @@
       background: linear-gradient(90deg, #3b8d42, #2e6d34);  */
     }
   
+          /* Set video container to full width and height */
+          .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        /* Embed video */
+        .video-container iframe, 
+        .video-container object, 
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
 
     /* Responsive for mobile devices (2 columns) */
     @media (max-width: 768px) {
@@ -154,6 +174,15 @@
   
 }
 }
+
+/* video */
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 600px) {
+            .video-container {
+                padding-bottom: 75%; /* 4:3 ratio */
+            }
+        }
 </style>
 
 <!-- end of password style -->
@@ -194,6 +223,15 @@
   </div>
 
 
+    <div class="video-container">
+        <iframe src="./2a00d1baf99b4468b8b8d1f8003ebcca.mp4" 
+                frameborder="0" 
+                allowfullscreen 
+                controls
+                autoplay
+                muted>
+        </iframe>
+      </div>
 
     <!-- welcome addres -->
 
@@ -204,7 +242,7 @@
     
 <div id="welcome">
     <h1 class="welcome">        <a class="navbar-brand" href="./images/tunuLogo.PNG"><img src="./images/tunuLogo.PNG" alt="" class="logo"></a>
-        WAO!</h1>
+        WOW!</h1>
 </div>
     <!-- header -->
     <div class="image-grid">
