@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;1,400&family=Sacramento&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav-icon/favicon-16x16.png">
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;
+      color: rgba(255, 255, 255, 0.82);
+      background-image: url(/IMG-20210214-WA0021\ hermon\ and\ i.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      background-position:center;
+            background-attachment: fixed;
+      background: linear-gradient(90deg, #3b8d42, #2e6d34); 
+    }
+    
+
+.btn{
+  cursor: pointer;
+  background-color: #dc3545 ;
+  color: white;
+  /* border-radius: 10%; */
+  border-radius: 30%;
+  border-color: yellow;
+  font-weight: bolder;
+  font-size: x-large;
+  margin-left: 5%;;
+  position: absolute; 
+  right: 43.5%; 
+  margin: 2rem 0rem;
+  font-weight: bold;
+  font-size: 18px;z-index: 1;
+}
+.mySlides {display: none}
+img,.img {vertical-align: middle;
+/* width: fit-content; */
+/* height: 450px; */
+height: auto;
+width:100%;}
+/* .img {
+            width: 100%;
+            height: auto;
+            display: block;
+        } */
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 20rem; */
+  max-width: 30.5rem;
+  position: relative;
+  /* bottom: 30rem; */
+  margin: 1rem auto;
+  z-index: 1;
+}
+
+/* Next & previous buttons */
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(15, 1, 1);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+.text {
+  background-color: #ffffff7e;
+  color: #19043a;
+  font-size:x-large;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  /* color: #e03535; */
+  color: black;
+  color: #B60071;
+  background-color: #FFB200;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  border-radius: 10px;
+}
+
+.small-in{
+  color: green;
+  background-color: #feffd2dc; 
+  border-radius:5px 15px; 
+  padding:1px 5px;
+}
+
+h1 {
+  /* color: #fff; */
+  font-weight: bolder;
+  font-size: xx-large;
+  margin: 5% 0% 2% 5%;
+}
+p{
+  color:#dcb035 ;
+  font-weight: bolder;
+  font-size: x-large;
+  margin-left: 5%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+
+
+  /* .responsiveVAX{
+    font-size: 50%;
+} */
+
+h1 {
+  /* color: #fff; */
+  font-weight: bolder;
+  font-size: xx-large;
+  margin: 1% 0% 2% 5%;
+}
+  /* .slideshow-container { */
+  /* max-width: 20rem; */
+  /* max-width: 40rem;
+  position: relative;
+  bottom: 45rem; */
+  /* margin: auto;  */
+/* } */
+/* h1 { */
+  /* color: #fff; */
+  /* font-weight: bolder;
+  font-size: xx-large; */
+  /* margin: 3% 0% 2% 5%; */
+/* } */
+}
+
+/* On bigger screens, increase text size */
+@media only screen and (min-width: 600px) {
+  .prev, .next,.text {font-size: 11px}
+  .slideshow-container {
+  /* max-width: 20rem; */
+     max-width: 40rem;
+     position: relative;
+     /* top: -5rem; */
+     top: -1rem;
+
+     margin: auto; 
+}
+
+
+
+
+h1 {
+  /* color: #fff; */
+  font-weight: bolder;
+  font-size: xx-large;
+  margin: 1% 0% 2% 5%;
+}
+.dot{
+  position:relative;
+  top:-5rem;
+}
+
+.text {
+  background-color: #ffffff7e;
+  color: #19043a;
+  font-size:x-large;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+/* button */
+.btn, a{
+  cursor: pointer;
+  background-color: #dc3545 ;
+  color: white;
+  /* border-radius: 10%; */
+  border-radius: 30%;
+  border-color: yellow;
+  font-weight: bolder;
+  font-size: x-large;
+  margin-left: 5%;
+  position: absolute; 
+  /* right: 43.5%;  */
+  right: 10.5%; 
+  top:0%;
+  margin: 1rem 0rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+}
+  /* mobile portrait */
+@media only screen and (max-width: 480px) 
+{
+  img,.img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+  /* mobile landscape */
+@media only screen and (min-width: 481px) and (max-width:769px) 
+{
+  img,.img {
+    width: 90%;
+    height: auto;
+  }
+  /* Caption text */
+.text {
+  /* background-color: #ffffff7e;
+  color: #19043a;
+  font-size:x-large;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px; */
+  width: 90%;
+  /* font-weight: bold;
+  text-align: center; */
+}
+}
+
+  /* tablet and desktop */
+@media only screen and (min-width: 481px) and (max-width:769px) 
+{
+  .img,img{
+    width: 80%;
+    height: auto;
+  }
+
+  /* Caption text */
+.text {
+  /*background-color: #ffffff7e;
+  color: #19043a;
+   font-size:x-large;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px; */
+  width: 80%;
+  
+}
+}
+  </style>
+
+</head>
+<body>
+
+<h1 class="responsiveVAX" >Cinderella <span class="small-in"> in</span>  H<span style="color: #d2b10d;">E</span>R<span style="color: rgba(255, 255, 0, 0.955);"> B</span>AD<span style="color: yellow; font-weight: bolder;">-</span> <span style="color: orangered;background-color: #19043a97;"> H <span style="color: rgb(129, 186, 237);">E</span> A <span style="color: red;">L <span style="color: yellow;"> T</span> H </span> <span style="color: aliceblue;"></span> <span style="color: rgb(240, 37, 70);"></span></span></h1>
+<!-- <p class="responsiveVAX" >Sit back and enjoy </p> -->
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">MOMMY AND I </div>
+    <img src="./image/IMG-20210214-WA0021 hermon and i.jpg" width="250" height="250">
+    <div class="text">moda at this stage</div>
+</div>
+
+<!-- 2 -->
+<div class="mySlides fade">
+  <div class="numbertext">2024 </div>
+  <img src="./image/IMG_20230818_001414_048 at this stage.jpg" width="250" height="250" alt="breakdown">
+  <div class="text">moda at this stage</div>
+</div>
+
+<!-- 3 -->
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="./image/IMG_20231229_002613_109 at this st.jpg" width="250" height="250" alt="breakdown">
+  <div class="text"> 2023</div>
+</div>
+
+<!-- 4 -->
+<div class="mySlides fade">
+  <div class="numbertext">HOW IT ALL BEGUN</div>
+  <img src="./New folder/IMG-20210731-WA0011 KORLEBU.jpg" width="250" height="250" alt="breakdown">
+  <div class="text">KORLEBU-2021</div>
+</div>
+
+<!-- 5 -->
+
+<div class="mySlides fade">
+  <div class="numbertext">MOMMY AND I</div>
+  <img src="./mO/IMG-20211011-WA0016 GRADUA.jpg" width="250" height="250" alt="breakdown">
+  <div class="text">2021</div>
+</div>
+<!-- 6 -->
+
+<div class="mySlides fade">
+  <div class="numbertext">me and u</div>
+  <img src="./image/IMG-20221121-WA0014 rence 2022.jpg" width="250" height="250" alt="breakdown">
+  <div class="text">2022</div>
+</div>
+
+
+<!-- 5 -->
+<!-- <div class="mySlides fade">
+  <div class="numbertext">MOMMY AND I</div>
+  <img class="img" src="./image/IMG-20211011-WA0017 elija and i 2.jpg" width="250" height="250">
+  <div class="text">KORLEBU-2021/OCT.</div>
+</div> -->
+
+<!-- <div class="mySlides fade">
+  <div class="numbertext">MOMMY AND I </div>
+  <img src="./image/IMG_20230818_001414_048 at this stage.jpg" width="250" height="250">
+  <div class="text">moda at this stage</div>
+</div> -->
+
+<!-- 6 -->
+
+
+<!-- 7 -->
+<div class="mySlides fade">
+  <div class="numbertext">HOW IT ALL BEGUN</div>
+  <img src="./image/IMG-20190611-WA0033 LATEbio.jpg" width="250" height="250" alt="breakdown">
+  <div class="text">KORLEBU-2019</div>
+</div>
+
+<!-- 8 -->
+<div class="mySlides fade">
+  <div class="numbertext">GRADUAL DETERRORIATION </div>
+  <img class="img" src="./New folder/IMG-20210830-WA0005 gradual deterroriation.jpg" width="250" height="250">
+  <div class="text">HOME-2021/AUG.</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span><br>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+
+
+
+   
+
+</div>
+<div>
+
+  <!-- <a href="./more.html"><button class="btn">click for More photos</button></a> -->
+  <a href="./index.html"><button class="btn">photos</button></a>
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+<!-- date change SCRIPT -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Get the current year
+      var currentYear = new Date().getFullYear();
+
+      // Find the element in your footer where the year is displayed
+      var yearElement = document.getElementById('year');
+
+      // Update the year in the footer
+      if (yearElement) {
+          yearElement.textContent = currentYear;
+      }
+  });
+</script>
+</body>
+</html> 
+
+
+

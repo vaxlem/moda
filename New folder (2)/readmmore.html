@@ -1,0 +1,72 @@
+Here’s an HTML snippet to achieve this functionality using basic HTML, CSS, and JavaScript.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More Example</title>
+    <style>
+        #fullText {
+            display: none;
+        }
+        .more-button {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="textContainer">
+        <p>Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Paragraph 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div id="fullText">
+            <p>Paragraph 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p>Paragraph 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <p>Paragraph 5: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+        </div>
+        <span class="more-button" onclick="toggleText()">Read More</span>
+    </div>
+
+    <script>
+        function toggleText() {
+            const fullText = document.getElementById('fullText');
+            const button = document.querySelector('.more-button');
+
+            if (fullText.style.display === 'none' || fullText.style.display === '') {
+                fullText.style.display = 'block';
+                button.textContent = 'Read Less';
+            } else {
+                fullText.style.display = 'none';
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+</html>
+
+How It Works:
+
+1. HTML:
+
+The first two paragraphs are always visible.
+
+The rest of the content is wrapped in a <div> with an ID of #fullText, initially hidden using CSS.
+
+
+
+2. CSS:
+
+Hides the extra content by default using display: none.
+
+
+
+3. JavaScript:
+
+Toggles the visibility of the #fullText <div> and updates the button text to "Read More" or "Read Less" based on the current state.
+
+
+
+
+Feel free to replace the placeholder text with your actual content!
