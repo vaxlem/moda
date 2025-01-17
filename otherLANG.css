@@ -2,10 +2,10 @@
         #none{display: none;}
 
         .site-content {
-            background-image: url(./images/la\ rella.png);
+            background-image: url(./image/IMG-20231024-WA0000\ ANOTHER\ YR\ ON.jpg);
             background-attachment: fixed;
-            /* background-size:100%; */
-            background-size: contain;
+            background-size:100%;
+            background-size:cover;
           
           }
 /* body{background-image: url(./image/pineapple_124985672.jpg);} */
@@ -14,7 +14,7 @@
 
   
  /* allowance between image and name txt */
-        .allowance{margin:0rem 2rem 0rem 4rem;
+        .allowance{margin:0rem;
             /* padding-right: 2rem; */
                 
         }
