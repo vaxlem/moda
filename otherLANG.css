@@ -50,6 +50,7 @@
             height: auto;
             background-color: #fff;
             float: left;border-radius: 10%;
+            padding-right: 8px;
         }
 
         .product p, a{color: black;}
@@ -69,7 +70,7 @@
         .description-position h3{
             color: navy;
             font-size: 30px;
-            text-align: justify;
+            text-align: left;
         }
         .btspacee{
             padding-bottom: 2rem;}
